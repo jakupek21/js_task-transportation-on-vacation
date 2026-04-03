@@ -4,12 +4,16 @@
  * @return {number}
  */
 function calculateRentalCost(days) {
-  let result = days * 40;
+  const COST_PER_DAY = 40;
+  const DISCOUNT_LONG = 50;
+  const DISCOUNT_MEDIUM = 20;
+
+  let result = days * COST_PER_DAY;
 
   if (days >= 7) {
-    result = result - 50;
+    result -= DISCOUNT_LONG;
   } else if (days >= 3) {
-    result = result - 20;
+    result -= DISCOUNT_MEDIUM;
   }
 
   return result;
