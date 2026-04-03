@@ -5,10 +5,6 @@
  */
 
 function calculateRentalCost(days) {
-  if (typeof days !== 'number' || days <= 0) {
-    return 0;
-  }
-
   const COST_PER_DAY = 40;
   const DISCOUNT_LONG = 50;
   const DISCOUNT_MEDIUM = 20;
