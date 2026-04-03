@@ -3,6 +3,7 @@
  *
  * @return {number}
  */
+
 function calculateRentalCost(days) {
   const COST_PER_DAY = 40;
   const DISCOUNT_LONG = 50;
